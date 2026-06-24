@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Andy Gonzalez Rivas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .not-found {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 160px 2rem 6rem;
+      text-align: center;
+    }
+    .not-found-code {
+      font-family: 'Lora', serif;
+      font-size: 6rem;
+      font-weight: 600;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.04em;
+    }
+    .not-found h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .not-found p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    .not-found-actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">Andy Gonzalez Rivas</a></div>
+  <div class="nav-links">
+    <a href="index.html#essays">Essays</a>
+    <a href="index.html#about">About</a>
+    <button class="theme-toggle" onclick="toggleTheme()">Light</button>
+  </div>
+</nav>
+
+<div class="not-found">
+  <div class="not-found-code">404</div>
+  <h1>This page doesn't exist</h1>
+  <p>The essay or page you're looking for may have moved,<br>or the link you followed was incorrect.</p>
+  <div class="not-found-actions">
+    <a href="index.html" class="btn btn-primary">Back to home</a>
+    <a href="index.html#essays" class="btn btn-ghost">Browse essays</a>
+  </div>
+</div>
+
+<footer>
+  <span>Andy Gonzalez Rivas</span>
+  <a href="https://github.com/andy00091/andy00091.github.io" target="_blank">View source</a>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    document.querySelector('.theme-toggle').textContent = next === 'dark' ? 'Light' : 'Dark';
+    localStorage.setItem('theme', next);
+  }
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+    document.querySelector('.theme-toggle').textContent = saved === 'dark' ? 'Light' : 'Dark';
+  }
+</script>
+</body>
+</html>

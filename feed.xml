@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andy Gonzalez Rivas</title>
+    <link>https://andy00091.github.io</link>
+    <description>Essays on society, technology, and the ideas shaping both.</description>
+    <language>en-us</language>
+    <atom:link href="https://andy00091.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 May 2026 00:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>AI as a Progressive Force: Modernity and Labor Alienation</title>
+      <link>https://andy00091.github.io/posts/ai-progressive-force-durkheim.html</link>
+      <guid isPermaLink="true">https://andy00091.github.io/posts/ai-progressive-force-durkheim.html</guid>
+      <pubDate>Thu, 15 May 2026 00:00:00 +0000</pubDate>
+      <description>Durkheim saw in the division of labor not the destruction of human dignity but its condition. This essay argues that what we are witnessing in AI-driven labor is not the structural verdict of technological development — but its anomic transition.</description>
+      <category>Sociology</category>
+      <category>Labor</category>
+      <category>AI &amp; Society</category>
+      <category>Durkheim</category>
+    </item>
+
+  </channel>
+</rss>
