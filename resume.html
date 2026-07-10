@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Andy Gonzalez Rivas</title>
+  <meta name="description" content="Resume of Andres Gonzalez Rivas — Environmental Sociology student at Drexel University." />
+  <meta name="author" content="Andy Gonzalez Rivas" />
+  <link rel="canonical" href="https://andyglzrivas.github.io/resume.html" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://andyglzrivas.github.io/resume.html" />
+  <meta property="og:title" content="Resume — Andy Gonzalez Rivas" />
+  <meta property="og:description" content="Environmental Sociology student at Drexel University. Public educator, legal interpreter, researcher." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .resume-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 100px 2rem 6rem;
+    }
+
+    .resume-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .resume-name {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+    .resume-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.25rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .resume-contact a { color: var(--muted); transition: color 0.2s; }
+    .resume-contact a:hover { color: var(--accent); text-decoration: none; }
+    .resume-actions {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    /* Sections */
+    .resume-section {
+      margin-bottom: 2.5rem;
+    }
+    .resume-section-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Entry */
+    .resume-entry {
+      margin-bottom: 1.75rem;
+    }
+    .resume-entry:last-child { margin-bottom: 0; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.15rem;
+    }
+    .entry-title {
+      font-family: 'Lora', serif;
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .entry-dates {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.6rem;
+    }
+    .entry-org {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    .entry-location {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .entry-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .entry-bullets li {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .entry-bullets li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Skills & coursework */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .skill-row {
+      display: flex;
+      gap: 0.75rem;
+      align-items: baseline;
+      font-size: 0.875rem;
+    }
+    .skill-label {
+      font-weight: 500;
+      color: var(--text);
+      width: 120px;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .skill-value { color: var(--text-secondary); }
+
+    .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    @media (max-width: 560px) {
+      .entry-header { flex-direction: column; gap: 0.1rem; }
+      .entry-sub { flex-direction: column; gap: 0.1rem; }
+      .entry-dates, .entry-location { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-logo"><a href="index.html">Andy Gonzalez Rivas</a></div>
+  <div class="nav-links">
+    <a href="index.html#essays">Essays</a>
+    <a href="resume.html" style="color: var(--accent)">Resume</a>
+    <button class="theme-toggle" onclick="toggleTheme()">Light</button>
+  </div>
+</nav>
+
+<div class="resume-wrapper">
+
+  <header class="resume-header">
+    <h1 class="resume-name">Andres Gonzalez Rivas</h1>
+    <div class="resume-contact">
+      <span>484-569-2627</span>
+      <a href="mailto:ag4353@drexel.edu">ag4353@drexel.edu</a>
+      <a href="https://linkedin.com/in/andy-glzrivas" target="_blank">linkedin.com/in/andy-glzrivas</a>
+    </div>
+    <div class="resume-actions">
+      <a href="index.html#about" class="btn btn-ghost">← Back</a>
+    </div>
+  </header>
+
+  <!-- Education -->
+  <section class="resume-section">
+    <div class="resume-section-title">Education</div>
+    <div class="resume-entry">
+      <div class="entry-header">
+        <div class="entry-title">Drexel University</div>
+        <div class="entry-dates">09/2023 – 06/2028</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">B.S. Environmental Sociology, Minor in Data Science</div>
+        <div class="entry-location">Philadelphia, PA</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>3.65 GPA</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="resume-section">
+    <div class="resume-section-title">Work Experience</div>
+
+    <div class="resume-entry">
+      <div class="entry-header">
+        <div class="entry-title">Public Educator</div>
+        <div class="entry-dates">04/2025 – 09/2025</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">Philadelphia Water Department</div>
+        <div class="entry-location">Philadelphia, PA</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Led presentations to children and adults on water and watershed environmental education programs at the FWWIC.</li>
+        <li>Designed training tools and outreach programs — presentations and handbooks — for future educators.</li>
+        <li>Maintained records of visitor groups and material stock needed to run education and outreach programs.</li>
+        <li>Conducted direct resident outreach on tap water quality, adapting communication style across diverse demographics.</li>
+      </ul>
+    </div>
+
+    <div class="resume-entry">
+      <div class="entry-header">
+        <div class="entry-title">Camp Counselor</div>
+        <div class="entry-dates">06/2023 – 08/2023</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">Upper Main Line YMCA</div>
+        <div class="entry-location">Berwyn, PA</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Maintained attendance logs, incident reports, and medical forms.</li>
+        <li>Organized and supervised camp activities including swimming, canoeing, arts and crafts, hikes, and sports.</li>
+        <li>Encouraged camper participation through enthusiastic and adaptive leadership.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Volunteer -->
+  <section class="resume-section">
+    <div class="resume-section-title">Volunteer Work</div>
+
+    <div class="resume-entry">
+      <div class="entry-header">
+        <div class="entry-title">Legal Interpreter</div>
+        <div class="entry-dates">02/2025 – 08/2025</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">Drexel University Thomas R. Kline School of Law</div>
+        <div class="entry-location">Philadelphia, PA</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Assisted law students conducting interviews with non-English-speaking clients for legal clinics.</li>
+        <li>Translated affidavits from English to Spanish and corrected interview transcripts.</li>
+        <li>Applied comprehensive knowledge of legal terminology and procedural requirements in both languages.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="resume-section">
+    <div class="resume-section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-label">Languages</span>
+        <span class="skill-value">English (fluent), Spanish (fluent)</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Coding</span>
+        <span class="skill-value">Python, R, SQL</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Software</span>
+        <span class="skill-value">Excel, Word, PowerPoint, G-Suite</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework -->
+  <section class="resume-section">
+    <div class="resume-section-title">Relevant Coursework</div>
+    <div class="course-list">
+      <span class="tag">Quantitative Research Methods</span>
+      <span class="tag">Qualitative Research Methods</span>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span>Andy Gonzalez Rivas</span>
+  <a href="https://github.com/andyglzrivas/andyglzrivas.github.io" target="_blank">View source</a>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    document.querySelector('.theme-toggle').textContent = next === 'dark' ? 'Light' : 'Dark';
+    localStorage.setItem('theme', next);
+  }
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+    document.querySelector('.theme-toggle').textContent = saved === 'dark' ? 'Light' : 'Dark';
+  }
+</script>
+</body>
+</html>
